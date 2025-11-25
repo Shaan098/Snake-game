@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #0c0c0c;
+    color: #f0f0f0;
+    font-family: system-ui, sans-serif;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game, .game-over {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.start-game {
+    display: flex;
+}
+
+.btn-start, .btn-restart {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #0af;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infos {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #101050;
+}
+
+.info {
+    padding: 10px 20px;
+    background: #222;
+    border-radius: 5px;
+}
+
+.board {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 2px solid #fff;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #222;
+    background: #111;
+}
+
+.fill {
+    background: limegreen !important;
+}
+
+.food {
+    background: red !important;
+}
